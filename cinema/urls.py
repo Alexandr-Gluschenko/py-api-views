@@ -6,8 +6,8 @@ from cinema.views import (MovieViewSet, CinemaHallViewSet,
                           ActorList, ActorDetail)
 
 router = DefaultRouter()
-router.register('movies', MovieViewSet)
-router.register('cinema_halls', CinemaHallViewSet)
+router.register("movies", MovieViewSet)
+router.register("cinema_halls", CinemaHallViewSet)
 urlpatterns = [
     path("", include(router.urls)),
     path("genres/", GenreList.as_view(), name="genre_list"),
